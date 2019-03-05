@@ -9,6 +9,11 @@ class QueueTasks {
 
         @JvmStatic
         fun main(args: Array<String>) {
+            queueTask()
+        }
+
+
+        private fun queueTask(){
             val logger = Logger
 
             val longTask = Thread {
@@ -41,7 +46,6 @@ class QueueTasks {
 
             logger.d("MAIN", "task completed")
         }
-
         /**
          * longTask: results done? false
          * shortTask: Start
