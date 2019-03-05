@@ -7,27 +7,36 @@ class CoffeeShop {
     private val logger = Logger
     private val TAG = "CoffeeShop"
 
-    fun takeOrder() {
-        logger.d(TAG, "takeOrder")
+    fun makeCoffee(coffee: String, milk: String) {
+        takeOrder(coffee, milk)
+        grindCoffeeBeans(coffee)
+        pullEspressoShot(coffee)
+        steamMilk(milk)
+        combibeForEspresso(coffee, milk)
+        serveCappucino(coffee, milk)
     }
 
-    fun grindCoffeeBeans() {
-        logger.d(TAG, "grindCoffeeBeans")
+    private fun takeOrder(coffee: String, milk: String) {
+        logger.d("$coffee $milk $TAG", "takeOrder")
     }
 
-    fun pullEspressoShot() {
-        logger.d(TAG, "pullEspressoShot")
+    private fun grindCoffeeBeans(coffee: String) {
+        logger.d("$coffee $TAG", "grindCoffeeBeans")
     }
 
-    fun steamMilk() {
-        logger.d(TAG, "steamMilk")
+    private fun pullEspressoShot(coffee: String) {
+        logger.d("$coffee $TAG", "pullEspressoShot")
     }
 
-    fun combibeForEspresso() {
-        logger.d(TAG, "combibeForEspresso")
+    private fun steamMilk(milk: String) {
+        logger.d("$milk $TAG", "steamMilk")
     }
 
-    fun serveCappucino() {
-        logger.d(TAG, "serveCappucino")
+    private fun combibeForEspresso(coffee: String, milk: String) {
+        logger.d("$coffee $milk $TAG", "combibeForEspresso")
+    }
+
+    fun serveCappucino(coffee: String, milk: String) {
+        logger.d("$coffee $milk $TAG", "serveCappucino")
     }
 }
