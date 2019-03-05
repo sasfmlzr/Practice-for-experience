@@ -7,7 +7,7 @@ class CoffeeShop {
     private val logger = Logger
     private val TAG = "CoffeeShop"
 
-    fun makeCoffee(coffee: String, milk: String) {
+     fun makeCoffee(coffee: String, milk: String) {
         takeOrder(coffee, milk)
         grindCoffeeBeans(coffee)
         pullEspressoShot(coffee)

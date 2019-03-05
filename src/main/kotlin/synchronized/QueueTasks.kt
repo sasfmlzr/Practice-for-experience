@@ -6,12 +6,10 @@ import java.util.concurrent.Executors.newFixedThreadPool
 class QueueTasks {
 
     companion object {
-
         @JvmStatic
         fun main(args: Array<String>) {
             queueTask()
         }
-
 
         private fun queueTask(){
             val logger = Logger
