@@ -37,7 +37,7 @@ class QueueTasks {
             resultShortTask.get()
 
             logger.d("longTask", "results done? " + (resultLongTask.isDone && resultShortTask.isDone))
-            summTask.start()
+            summTask.run()
 
             logger.d("MAIN", "task completed")
         }
@@ -49,9 +49,9 @@ class QueueTasks {
          * shortTask: End
          * longTask: End
          * longTask: results done? true
-         * MAIN: task completed
          * summTask: Start
          * summTask: End
+         * MAIN: task completed
          */
     }
 }
