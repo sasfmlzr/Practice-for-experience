@@ -45,6 +45,7 @@ class QueueTasks {
             summTask.run()
 
             logger.d("MAIN", "task completed")
+            fixedPool.shutdown()
         }
         /**
          * longTask: results done? false
