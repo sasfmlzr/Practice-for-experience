@@ -1,6 +1,6 @@
-package main.kotlin.synchronized
+package synchronized
 
-import main.kotlin.example.Logger
+import example.Logger
 import java.util.concurrent.Executors.newFixedThreadPool
 
 class QueueTasks {

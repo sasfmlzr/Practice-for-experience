@@ -1,4 +1,4 @@
-package main.kotlin.example
+package example
 
 class Logger {
 

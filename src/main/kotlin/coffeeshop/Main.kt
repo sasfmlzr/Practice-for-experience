@@ -1,11 +1,10 @@
-package main.kotlin.coffeeshop
+package coffeeshop
 
 class Main {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
 
-            
             val coffeeShop = CoffeeShop()
 
             coffeeShop.makeCoffee("Cappucino", "OneMilk")

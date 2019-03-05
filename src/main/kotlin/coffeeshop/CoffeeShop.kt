@@ -1,6 +1,6 @@
-package main.kotlin.coffeeshop
+package coffeeshop
 
-import main.kotlin.example.Logger
+import example.Logger
 
 class CoffeeShop {
 
