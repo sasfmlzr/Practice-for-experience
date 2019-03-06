@@ -1,5 +1,6 @@
 package coroutines.coffeeshop
 
+import example.Coffee
 import example.Logger
 import kotlinx.coroutines.delay
 
@@ -8,13 +9,14 @@ class CoffeeShop {
     private val logger = Logger
     private val TAG = "CoffeeShop"
 
-    suspend fun makeCoffee(coffee: String, milk: String) {
+    suspend fun makeCoffee(coffee: String, milk: String) : Coffee {
         takeOrder(coffee, milk)
         grindCoffeeBeans(coffee)
         pullEspressoShot(coffee)
         steamMilk(milk)
         combibeForEspresso(coffee, milk)
         serveCappucino(coffee, milk)
+        return Coffee(coffee)
     }
 
     private suspend fun takeOrder(coffee: String, milk: String) {
