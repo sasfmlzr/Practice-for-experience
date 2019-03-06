@@ -1,6 +1,7 @@
-package coffeeshop
+package threads.coffeeshop
 
 import example.Logger
+import kotlinx.coroutines.delay
 
 class CoffeeShop {
 
@@ -16,27 +17,33 @@ class CoffeeShop {
         serveCappucino(coffee, milk)
     }
 
-    private fun takeOrder(coffee: String, milk: String) {
+    private  fun takeOrder(coffee: String, milk: String) {
+        Thread.sleep(300)
         logger.d("$coffee $milk $TAG", "takeOrder")
     }
 
-    private fun grindCoffeeBeans(coffee: String) {
+    private  fun grindCoffeeBeans(coffee: String) {
+        Thread.sleep(300)
         logger.d("$coffee $TAG", "grindCoffeeBeans")
     }
 
-    private fun pullEspressoShot(coffee: String) {
+    private  fun pullEspressoShot(coffee: String) {
+        Thread.sleep(300)
         logger.d("$coffee $TAG", "pullEspressoShot")
     }
 
-    private fun steamMilk(milk: String) {
+    private  fun steamMilk(milk: String) {
+        Thread.sleep(300)
         logger.d("$milk $TAG", "steamMilk")
     }
 
-    private fun combibeForEspresso(coffee: String, milk: String) {
+    private  fun combibeForEspresso(coffee: String, milk: String) {
+        Thread.sleep(300)
         logger.d("$coffee $milk $TAG", "combibeForEspresso")
     }
 
-    fun serveCappucino(coffee: String, milk: String) {
+    private  fun serveCappucino(coffee: String, milk: String) {
+        Thread.sleep(300)
         logger.d("$coffee $milk $TAG", "serveCappucino")
     }
 }
